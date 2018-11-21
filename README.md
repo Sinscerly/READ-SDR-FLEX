@@ -1,5 +1,6 @@
 *****************************************
 *************** README ******************
+
 This repo is for getting a certain P2000 message, this is made for fair use only.
 
 
@@ -17,6 +18,7 @@ I have tested it with python3.5
 
 *****************************************
 **** Install P2000 RECEIVER: RTL-SDR ****
+
 Execute:
 	mkdir -p ~/src/
 	cd ~/src/
@@ -30,6 +32,7 @@ Execute:
 	sudo ldconfig
 
 **** Test it ****
+
 Execute:
 	rtl_test
 
@@ -42,6 +45,7 @@ reboot and try again
 
 *************************************************
 **** Install P2000 FLEX DECODER: MULTIMON-NG ****
+
 Execute:
 	cd ~/src/
 	git clone https://github.com/Zanoroy/multimon-ng.git
@@ -53,9 +57,10 @@ Execute:
 	sudo make install
 
 **** Test Receiving ****
+
 Dutch example, execute:
 	rtl_fm -f 169.65M -M fm -s 22050 -p 43 -g 49 | multimon-ng -a FLEX -t raw /dev/stdin
 
 If it looks something like this:
-FLEX: 2018-11-15 14:08:20 1600/2/K/A 02.020 [001220499] ALN test 446 fijne dienst
+FLEX: 2018-11-15 14:08:20 1600/2/K/A 02.020 [000000000] ALN test 446 fijne dienst
 You made it :)
