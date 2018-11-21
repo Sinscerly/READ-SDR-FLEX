@@ -3,6 +3,12 @@
 
 This repo is for getting a certain P2000 message, this is made for fair use only.
 
+RTL-SDR Receiver is used.
+
+Frequency: 169,650 MHz
+Speed 1600 bit/s (2FSK)
+Protocol: Motorola FLEX
+
 
 Could be handy to have installed:
 
